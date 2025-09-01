@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chào mừng 80 Năm Quốc Khánh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+  </head>
+  <body>
+    <canvas id="fireworks-canvas"></canvas>
+
+    <div id="creation-container">
+      <h1>Tạo Thiệp Chúc Mừng</h1>
+      <textarea
+        id="message-input"
+        rows="4"
+        placeholder="Nhập lời chúc của bạn vào đây..."
+      ></textarea>
+      <button id="generate-btn">Tạo Link Thiệp</button>
+      <div id="result-box" style="display: none">
+        <p>Link của bạn đã sẵn sàng:</p>
+        <input type="text" id="generated-link" readonly />
+        <button id="copy-btn">Sao chép</button>
+      </div>
+    </div>
+
+    <div id="book" class="book">
+      <div class="page static-page">
+        <img src="3.png" alt="Trang trong phải" />
+        <p id="card-message"></p>
+      </div>
+      <div class="flipping-cover">
+        <div class="page front">
+          <img src="bia1.png" alt="Bìa Thiệp" />
+        </div>
+        <div class="page back">
+          <img src="2.png" alt="Trang trong trái" />
+        </div>
+      </div>
+    </div>
+<audio id="background-music" src="music.mp3" loop></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
